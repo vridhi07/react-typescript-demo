@@ -9,6 +9,7 @@ import { Button } from "./components/Button";
 import { Input } from "./components/Input";
 import { Container } from "./components/Container";
 import { User } from "./state/User";
+import { Counter } from "./state/Counter";
 
 function App() {
   const personName = {
@@ -48,6 +49,7 @@ function App() {
       ></Button>
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
       <User />
+      <Counter />
     </div>
   );
 }
