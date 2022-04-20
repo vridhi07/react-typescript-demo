@@ -14,7 +14,7 @@ import { ThemeContextProvider } from "./context/themeContext";
 import { Box } from "./context/Box";
 import { Users } from "./context/Users";
 import { UserContextProvider } from "./context/UserContext";
-
+import { DomRef } from "./ref/DomRef";
 function App() {
   const personName = {
     first: "vridhi",
@@ -60,6 +60,7 @@ function App() {
       <UserContextProvider>
         <Users />
       </UserContextProvider>
+      <DomRef />
     </div>
   );
 }
