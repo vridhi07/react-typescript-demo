@@ -18,6 +18,7 @@ import { DomRef } from "./ref/DomRef";
 import { Private } from "./auth/Private";
 import { Profile } from "./auth/Profile";
 import { List } from "./generics/List";
+import { RandomNumber } from "./restrictions/RandomNumber";
 function App() {
   const personName = {
     first: "vridhi",
@@ -96,6 +97,7 @@ function App() {
           console.log(items);
         }}
       />
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
