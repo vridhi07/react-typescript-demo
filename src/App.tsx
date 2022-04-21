@@ -17,6 +17,7 @@ import { UserContextProvider } from "./context/UserContext";
 import { DomRef } from "./ref/DomRef";
 import { Private } from "./auth/Private";
 import { Profile } from "./auth/Profile";
+import { List } from "./generics/List";
 function App() {
   const personName = {
     first: "vridhi",
@@ -64,6 +65,37 @@ function App() {
       </UserContextProvider>
       <DomRef />
       <Private isLoggedIn={true} Component={Profile} />
+      <List
+        items={["batman", "superman", "wonder woman"]}
+        onClick={(items) => {
+          console.log(items);
+        }}
+      />
+      <List
+        items={[1, 2, 3]}
+        onClick={(items) => {
+          console.log(items);
+        }}
+      />
+      <List
+        items={[
+          {
+            first: "vridhi",
+            last: "wadhawan",
+          },
+          {
+            first: "clark",
+            last: "kent",
+          },
+          {
+            first: "princess",
+            last: "diana",
+          },
+        ]}
+        onClick={(items) => {
+          console.log(items);
+        }}
+      />
     </div>
   );
 }
