@@ -19,6 +19,8 @@ import { Private } from "./auth/Private";
 import { Profile } from "./auth/Profile";
 import { List } from "./generics/List";
 import { RandomNumber } from "./restrictions/RandomNumber";
+import { Toast } from "./templateliterals/Toast";
+import { CustomButton } from "./html/Button";
 function App() {
   const personName = {
     first: "vridhi",
@@ -98,6 +100,15 @@ function App() {
         }}
       />
       <RandomNumber value={10} isPositive />
+      <Toast position="left - center" />
+      <CustomButton
+        variant="primary"
+        onClick={() => {
+          console.log("clicked");
+        }}
+      >
+        primary button
+      </CustomButton>
     </div>
   );
 }
