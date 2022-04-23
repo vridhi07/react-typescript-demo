@@ -107,6 +107,7 @@ function App() {
           console.log("clicked");
         }}
       >
+        {/* <div>primary button</div> */}
         primary button
       </CustomButton>
     </div>
