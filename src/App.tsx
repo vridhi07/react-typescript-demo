@@ -21,6 +21,7 @@ import { List } from "./generics/List";
 import { RandomNumber } from "./restrictions/RandomNumber";
 import { Toast } from "./templateliterals/Toast";
 import { CustomButton } from "./html/Button";
+import { Text } from "./polymorphic/Test";
 function App() {
   const personName = {
     first: "vridhi",
@@ -110,6 +111,16 @@ function App() {
         {/* <div>primary button</div> */}
         primary button
       </CustomButton>
+
+      <Text as="h1" size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text as="label" htmlFor="someId" size="sm" color="secondary">
+        Label
+      </Text>
     </div>
   );
 }
