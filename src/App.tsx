@@ -22,6 +22,7 @@ import { RandomNumber } from "./restrictions/RandomNumber";
 import { Toast } from "./templateliterals/Toast";
 import { CustomButton } from "./html/Button";
 import { Text } from "./polymorphic/Test";
+import { Counters } from "./class/Counters";
 function App() {
   const personName = {
     first: "vridhi",
@@ -121,6 +122,7 @@ function App() {
       <Text as="label" htmlFor="someId" size="sm" color="secondary">
         Label
       </Text>
+      <Counters message="count value is " />
     </div>
   );
 }
